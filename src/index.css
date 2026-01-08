@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #0f172a;
+  background-color: #f8fafc;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Helps masonry columns feel consistent on narrow viewports */
+.columns-1 {
+  column-gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .sm\:columns-2 {
+    column-gap: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:columns-3 {
+    column-gap: 1.5rem;
+  }
+}
