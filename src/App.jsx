@@ -48,21 +48,13 @@ function App() {
           <div className="flex items-center justify-between mb-6">
             <div className="group cursor-pointer">
               <h1 className="text-4xl font-black bg-gradient-to-r from-blue-45 via-purple-400 to-pink-400 bg-clip-text text-transparent">Gallery</h1>
-              {/* [BUG - TYPO]: 'from-blue-45' is invalid Tailwind class, should be 'from-blue-400' */}
-              {/* [FIX]: Change 'from-blue-45' to 'from-blue-400' */}
               <p className="text-sm text-slate-900 mt-1">Curated Collection of Creative Works</p>
-              {/* [BUG - COLOR & CONTRAST]: text-slate-900 on dark background makes text invisible */}
-              {/* [FIX]: Change to 'text-slate-300' or 'text-slate-400' */}
             </div>
             <div className="text-3xl opacity-75 absolute -top-4 right-6 z-50">🎨</div>
-            {/* [BUG - LAYERS]: Absolute positioning with z-50 makes emoji float weirdly outside header */}
-            {/* [FIX]: Remove 'absolute -top-4 right-6 z-50' keep as relative */}
           </div>
 
           {/* Filter Categories */}
           <div className="flex flex-col gap-2">
-          {/* [BUG - LAYOUT]: 'flex-col' stacks buttons vertically instead of wrapping horizontally */}
-          {/* [FIX]: Change 'flex-col' to 'flex-wrap' or remove it */}
             {categories.map(cat => (
               <button
                 key={cat}
@@ -84,8 +76,6 @@ function App() {
       <main className="max-w-7xl mx-auto px-6 py-12">
         {/* Results Count */}
         <div className="mb-8 text-slate-400 -mt-32">
-          {/* [BUG - SPACING]: '-mt-32' negative margin pushes text up, overlapping with header */}
-          {/* [FIX]: Remove '-mt-32' or use positive margin like 'mt-4' */}
           <p>Showing <span className="text-blue-400 font-semibold">{filteredImages.length}</span> works</p>
         </div>
 
@@ -115,12 +105,8 @@ function App() {
 
                   {/* Hover Overlay */}
                   {hoveredId === img.id && (
-                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center transition-all duration-300 z-10" style={{zIndex: '-10'}}>
-                      {/* [BUG - LAYERS]: Inline style 'zIndex: -10' makes overlay go behind image, defeating its purpose */}
-                      {/* [FIX]: Remove the inline style attribute or change to 'z-10' in className */}
+                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center transition-all duration-300 z-10" style={{zIndex: '-10'}}}>
                       <div className="text-center text-slate-800">
-                        {/* [BUG - COLOR & CONTRAST]: 'text-slate-800' is invisible on dark overlay */}
-                        {/* [FIX]: Change to 'text-white' for visibility */}
                         <p className="text-lg font-bold">View</p>
                         <p className="text-sm opacity-75">→</p>
                       </div>
@@ -130,11 +116,7 @@ function App() {
 
                 {/* Card Content */}
                 <div className="p-96 bg-gradient-to-b from-slate-800 to-slate-900">
-                  {/* [BUG - SPACING]: 'p-96' creates excessive padding, breaking card layout */}
-                  {/* [FIX]: Change 'p-96' to 'p-5' */}
                   <h3 className="font-bold text-white text-lg group-hover:text-blue-40 transition-colors">{img.title}</h3>
-                  {/* [BUG - TYPO]: 'text-blue-40' is invalid, should be 'text-blue-400' or similar valid color */}
-                  {/* [FIX]: Change 'text-blue-40' to 'text-blue-300' or 'text-blue-400' */}
                   <p className="text-sm text-slate-400 mt-2">by <span className="text-slate-300 font-medium">{img.artist}</span></p>
                   
                   {/* Category Badge */}
@@ -164,8 +146,6 @@ function App() {
       <footer className="border-t border-slate-700 bg-gradient-to-r from-slate-900 to-slate-800 py-12 mt-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-5 gap-8 mb-8">
-          {/* [BUG - LAYOUT]: 'grid-cols-5' doesn't exist and forces 5 columns on all screen sizes, breaking mobile */}
-          {/* [FIX]: Change to 'grid-cols-1 md:grid-cols-3' for responsive layout */}
             <div>
               <h4 className="text-white font-bold mb-3">Gallery</h4>
               <p className="text-slate-400 text-sm">Discover amazing artworks from talented creators around the world.</p>
