@@ -105,7 +105,7 @@ function App() {
 
                   {/* Hover Overlay */}
                   {hoveredId === img.id && (
-                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center transition-all duration-300 z-10" style={{zIndex: '-10'}}}>
+                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center transition-all duration-300 z-10" style={{zIndex: '-10'}}>
                       <div className="text-center text-slate-800">
                         <p className="text-lg font-bold">View</p>
                         <p className="text-sm opacity-75">→</p>
