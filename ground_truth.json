@@ -1,0 +1,155 @@
+{
+  "repository": "Image Gallery (Masonry)",
+  "bugs": [
+    {
+      "bug_category": "Typo",
+      "bug_type": "color",
+      "file_modified": "src/App.jsx",
+      "line_number": 50,
+      "clean_code": "              <h1 className=\"text-4xl font-black bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent\">Gallery</h1>",
+      "buggy_code": "              <h1 className=\"text-4xl font-black bg-gradient-to-r from-blue-45 via-purple-400 to-pink-400 bg-clip-text text-transparent\">Gallery</h1>",
+      "css_selector": "h1",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "color",
+      "file_modified": "src/App.jsx",
+      "line_number": 51,
+      "clean_code": "              <p className=\"text-sm text-slate-400 mt-1\">Curated Collection of Creative Works</p>",
+      "buggy_code": "              <p className=\"text-sm text-slate-900 mt-1\">Curated Collection of Creative Works</p>",
+      "css_selector": "p",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layout",
+      "bug_type": "position",
+      "file_modified": "src/App.jsx",
+      "line_number": 53,
+      "clean_code": "            <div className=\"text-3xl opacity-75\">🎨</div>",
+      "buggy_code": "            <div className=\"text-3xl opacity-75 absolute -top-4 right-6 z-50\">🎨</div>",
+      "css_selector": "div",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layout",
+      "bug_type": "flexbox",
+      "file_modified": "src/App.jsx",
+      "line_number": 56,
+      "clean_code": "          <div className=\"flex flex-wrap gap-2\">",
+      "buggy_code": "          <div className=\"flex flex-col gap-2\">",
+      "css_selector": "div",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Spacing",
+      "bug_type": "margin-top",
+      "file_modified": "src/App.jsx",
+      "line_number": 78,
+      "clean_code": "        <div className=\"mb-8 text-slate-400\">",
+      "buggy_code": "        <div className=\"mb-8 text-slate-400 -mt-32\">",
+      "css_selector": "div",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/App.jsx",
+      "line_number": 108,
+      "clean_code": "                    <div className=\"absolute inset-0 bg-black/40 flex items-center justify-center transition-all duration-300\">",
+      "buggy_code": "                    <div className=\"absolute inset-0 bg-black/40 flex items-center justify-center transition-all duration-300 z-10\" style={{zIndex: '-10'}}>",
+      "css_selector": "div",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "color",
+      "file_modified": "src/App.jsx",
+      "line_number": 109,
+      "clean_code": "                      <div className=\"text-center text-white\">",
+      "buggy_code": "                      <div className=\"text-center text-slate-800\">",
+      "css_selector": "div",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Spacing",
+      "bug_type": "padding",
+      "file_modified": "src/App.jsx",
+      "line_number": 118,
+      "clean_code": "                <div className=\"p-5 bg-gradient-to-b from-slate-800 to-slate-900\">",
+      "buggy_code": "                <div className=\"p-96 bg-gradient-to-b from-slate-800 to-slate-900\">",
+      "css_selector": "div",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Typo",
+      "bug_type": "color",
+      "file_modified": "src/App.jsx",
+      "line_number": 119,
+      "clean_code": "                  <h3 className=\"font-bold text-white text-lg group-hover:text-blue-400 transition-colors\">{img.title}</h3>",
+      "buggy_code": "                  <h3 className=\"font-bold text-white text-lg group-hover:text-blue-40 transition-colors\">{img.title}</h3>",
+      "css_selector": "h3",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layout",
+      "bug_type": "grid-template-columns",
+      "file_modified": "src/App.jsx",
+      "line_number": 148,
+      "clean_code": "          <div className=\"grid grid-cols-1 md:grid-cols-3 gap-8 mb-8\">",
+      "buggy_code": "          <div className=\"grid grid-cols-5 gap-8 mb-8\">",
+      "css_selector": "div",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    }
+  ]
+}
