@@ -1,0 +1,16 @@
+{
+  "actions": [
+    {
+      "name": "bug-6-HoverOverlay",
+      "selector": "div.break-inside-avoid.group:first-of-type"
+    },
+    {
+      "name": "bug-7-HoverOverlay",
+      "selector": "div.break-inside-avoid.group:first-of-type"
+    },
+    {
+      "name": "bug-9-HoverTitle",
+      "selector": "div.break-inside-avoid.group:first-of-type"
+    }
+  ]
+}
